@@ -97,6 +97,9 @@
 	<key>WKAppBoundDomains</key>
 	<array>
 		<string>pocketparty.app/?source=ios-twa</string>
+		<string>accounts.google.com</string>
+		<string>www.facebook.com</string>
+		<string>m.facebook.com</string>
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
