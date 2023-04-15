@@ -20,6 +20,7 @@ let authOrigins: [String] = ["accounts.google.com", "www.facebook.com", "m.faceb
 // allowedOrigins + authOrigins <= 10
 
 let platformCookie = Cookie(name: "app-platform", value: "iOS App Store")
+let appVersion = Cookie(name: "app-version", value: "1.5")
 
 // UI options
 let displayMode = "standalone" // standalone / fullscreen.
