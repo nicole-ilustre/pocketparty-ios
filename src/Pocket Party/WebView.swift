@@ -56,6 +56,17 @@ func setCustomCookie(webView: WKWebView) {
 
     webView.configuration.websiteDataStore.httpCookieStore.setCookie(_platformCookie)
 
+    let _appVersionCookie = HTTPCookie(properties: [
+        .domain: rootUrl.host!,
+        .path: "/",
+        .name: appVersion.name,
+        .value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+        .secure: "FALSE",
+        .expires: NSDate(timeIntervalSinceNow: 31556926)
+    ])!
+
+    webView.configuration.websiteDataStore.httpCookieStore.setCookie(_appVersionCookie)
+
 }
 
 func calcWebviewFrame(webviewView: UIView, toolbarView: UIToolbar?) -> CGRect{
