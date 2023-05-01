@@ -16,7 +16,7 @@ let allowedOrigins: [String] = ["pocketparty.app"]
 
 // auth origins will open in modal and show toolbar for back into the main origin.
 // These should also appear in Info.plist
-let authOrigins: [String] = ["accounts.google.com", "www.facebook.com", "m.facebook.com"]
+let authOrigins: [String] = ["accounts.google.com", "www.facebook.com", "m.facebook.com", "appleid.apple.com"]
 // allowedOrigins + authOrigins <= 10
 
 let platformCookie = Cookie(name: "app-platform", value: "iOS App Store")
